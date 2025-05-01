@@ -1,6 +1,7 @@
 package tests
 
 import (
+	"fmt"
 	"testing"
 
 	"github.com/jachant/YadroTest/task"
@@ -14,9 +15,13 @@ func TestTask1_Base(t *testing.T) {
 	}
 	expected := "no"
 	result := task.Task1(input)
+	fmt.Println("input=", input)
+	fmt.Println("expected=", expected)
+	fmt.Println("result=", result)
 	if result != expected {
 		t.Errorf("Expected %s, got %s", expected, result)
 	}
+
 }
 func TestTask1_Success(t *testing.T) {
 	input := [][]uint64{
@@ -25,6 +30,9 @@ func TestTask1_Success(t *testing.T) {
 	}
 	expected := "yes"
 	result := task.Task1(input)
+	fmt.Println("input=", input)
+	fmt.Println("expected=", expected)
+	fmt.Println("result=", result)
 	if result != expected {
 		t.Errorf("Expected %s, got %s", expected, result)
 	}
@@ -37,6 +45,9 @@ func TestTask1_Failure(t *testing.T) {
 	}
 	expected := "no"
 	result := task.Task1(input)
+	fmt.Println("input=", input)
+	fmt.Println("expected=", expected)
+	fmt.Println("result=", result)
 	if result != expected {
 		t.Errorf("Expected %s, got %s", expected, result)
 	}
@@ -46,6 +57,9 @@ func TestTask1_SingleContainer(t *testing.T) {
 	input := [][]uint64{{5}}
 	expected := "yes"
 	result := task.Task1(input)
+	fmt.Println("input=", input)
+	fmt.Println("expected=", expected)
+	fmt.Println("result=", result)
 	if result != expected {
 		t.Errorf("Expected %s, got %s", expected, result)
 	}
@@ -58,6 +72,9 @@ func TestTask1_SortedSums(t *testing.T) {
 	}
 	expected := "yes"
 	result := task.Task1(input)
+	fmt.Println("input=", input)
+	fmt.Println("expected=", expected)
+	fmt.Println("result=", result)
 	if result != expected {
 		t.Errorf("Expected %s, got %s", expected, result)
 	}
@@ -70,6 +87,9 @@ func TestTask1_AllZeros(t *testing.T) {
 	}
 	expected := "yes"
 	result := task.Task1(input)
+	fmt.Println("input=", input)
+	fmt.Println("expected=", expected)
+	fmt.Println("result=", result)
 	if result != expected {
 		t.Errorf("Expected %s, got %s", expected, result)
 	}
@@ -82,6 +102,9 @@ func TestTask1_DuplicateSums(t *testing.T) {
 	}
 	expected := "yes"
 	result := task.Task1(input)
+	fmt.Println("input=", input)
+	fmt.Println("expected=", expected)
+	fmt.Println("result=", result)
 	if result != expected {
 		t.Errorf("Expected %s, got %s", expected, result)
 	}
@@ -94,6 +117,9 @@ func TestTask1_NonSquareMatrix(t *testing.T) {
 	}
 	expected := "no"
 	result := task.Task1(input)
+	fmt.Println("input=", input)
+	fmt.Println("expected=", expected)
+	fmt.Println("result=", result)
 	if result != expected {
 		t.Errorf("Expected %s, got %s", expected, result)
 	}
